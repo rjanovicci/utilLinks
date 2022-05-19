@@ -101,3 +101,27 @@ Reinicie o computador.
 
     sudo reboot
 
+League:
+
+Passo 1. Abra um terminal;
+Passo 2. Instale a versão estável do Wine com o seguinte comando;
+
+    sudo snap install wine-platform-runtime
+
+Passo 3. Se preferir os recursos mais recente, instale a versão instável do Wine com o comando abaixo;
+
+    sudo snap install wine-platform-runtime --edge
+
+Passo 4. Em seguida, instale o jogo, usando esse comando:
+
+    snap install leagueoflegends --edge --devmode
+    snap refresh --candidate wine-platform-5-staging
+    snap refresh --candidate wine-platform-runtime
+
+Passo 5. Mais tarde, se você precisar atualizar o programa, use:
+
+    sudo snap refresh leagueoflegends
+
+Passo 6. Depois, se for necessário, desinstale o programa, usando o comando abaixo;
+
+    sudo snap remove leagueoflegends
